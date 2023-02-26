@@ -40,9 +40,11 @@ function App() {
     }
   }
 
+  // You're welcome...😁😁😁
+
 
   return (
-    <main className='' onKeyDown={keyDownEvent} tabIndex={0}>
+    <main className="bg-yellow-400 min-h-screen w-full flex flex-col" onKeyDown={keyDownEvent} tabIndex={0}>
       <h1>Color Palette Generator</h1>
 
       <Palette />
