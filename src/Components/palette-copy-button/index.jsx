@@ -12,7 +12,9 @@ export const PaletteCopyButton = () => {
         }
     }
     return (
-        <button onClick={onCopyBtnPress} className="py-2 px-4 bg-secondary-light hover:bg-primary-light text-primary-dark border-2 border-primary-dark rounded-full flex justify-center items-center font-quicksand mt-10 font-bold tracking-wider hover:shadow-xl">
+        <button onClick={onCopyBtnPress} className="py-2 px-4 bg-secondary-light hover:bg-primary-light
+         text-primary-dark border-2 border-primary-dark rounded-full flex justify-center items-center 
+         font-quicksand mt-10 font-bold tracking-wider hover:shadow-xl">
         Click to copy the color palette • Or just press "C"
         </button>
     )
