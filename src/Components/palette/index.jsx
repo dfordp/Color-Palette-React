@@ -7,7 +7,7 @@ import {useRecoilValue} from "recoil"
 export const Palette=()=>{
     const colorPalette = useRecoilValue(colorAtom);
     return(                                             
-        <div>
+        <div className="w-full flex flex-wrap items-center justify-center mt-8">
             {colorPalette.map((color, index) => {           
                 return <ColorBox key={index} color={color} />   
             })} 

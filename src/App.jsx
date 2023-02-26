@@ -40,22 +40,25 @@ function App() {
     }
   }
 
-  // You're welcome...😁😁😁
 
 
   return (
-    <main className="bg-yellow-400 min-h-screen w-full flex flex-col" onKeyDown={keyDownEvent} tabIndex={0}>
-      <h1>Color Palette Generator</h1>
+    <main className="min-h-screen w-full flex flex-col justify-center items-center bg-primary-light p-5" onKeyDown={keyDownEvent} tabIndex={0}>
+      <h1 className="sm:text-3xl text-2xl font-quicksand font-bold text-primary-dark tracking-wider text-center">
+      Color Palette Generator
+      </h1>
 
       <Palette />
 
       <GenerateButton />
 
-      <p>
+      <p className="font-quicksand font-bold tracking-wider text-primary-dark mt-2">
         Or Just press the Spacebar to generate a new palette
       </p>
 
       <PaletteCopyButton />
+
+      
 
 
     </main>
