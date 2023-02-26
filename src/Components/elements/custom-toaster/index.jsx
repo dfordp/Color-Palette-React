@@ -1,6 +1,6 @@
 import {Toaster, ToastBar} from "react-hot-toast";
 
-const CustomToaster = () => {
+export const CustomToaster = () => {
     return (
         <Toaster
             toastOptions={{
@@ -39,5 +39,3 @@ const CustomToaster = () => {
         </Toaster>
     );
 };
-
-export default CustomToaster;

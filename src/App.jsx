@@ -1,7 +1,7 @@
-import {Palette} from './Components/Palette'
+import {Palette} from './Components/palette'
 import {GenerateButton} from './Components/generate-button'
 import {PaletteCopyButton} from './Components/palette-copy-button'
-import {colorsAtom} from './Atom'
+import {colorAtom} from './Atom'
 import { useRecoilState } from 'recoil'
 import {toast} from 'react-hot-toast'
 import { KeyboardEvent } from 'react'
@@ -10,7 +10,7 @@ import {generatePalette} from './Helpers'
 
 function App() {
 
-  const [colorPalette, setColorPalette] = useRecoilState(colorsAtom);
+  const [colorPalette, setColorPalette] = useRecoilState(colorAtom);
 
 
   const onSpacePressed = () => {
