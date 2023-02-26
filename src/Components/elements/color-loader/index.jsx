@@ -4,7 +4,7 @@ import { useSetRecoilState } from "recoil";
 import { useEffect,useRef } from "react";
 
 // This component is for intializing the color palette when the app is loaded for the first time.
-const ColorLoader = () => {
+export const ColorLoader = () => {
     const SetColorPalette=useSetRecoilState(colorAtom);
     const IsMounted=useRef(false);
 
@@ -24,6 +24,3 @@ const ColorLoader = () => {
     return <></>
 
 }
-
-
-export default ColorLoader;

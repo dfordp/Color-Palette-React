@@ -5,7 +5,7 @@ export const ColorBox = (props) => {
     
     const {color} = props;
     
-    onPressed = () => {
+    const onPressed = () => {
         if(window !== undefined) {
             window.navigator.clipboard.writeText(color);
             toast.success("Color Copied...");
