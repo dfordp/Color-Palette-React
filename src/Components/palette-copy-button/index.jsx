@@ -7,7 +7,7 @@ export const PaletteCopyButton = () => {
 
     const onCopyBtnPress=()=>{
         if(window !== undefined && colorPalette.length === 5) {
-            window.navigator.clipboard.writeText('${colorPalette[0]} ${colorPalette[1]} ${colorPalette[2]} ${colorPalette[3]} ${colorPalette[4]}');
+            window.navigator.clipboard.writeText(`${colorPalette[0]}, ${colorPalette[1]}, ${colorPalette[2]}, ${colorPalette[3]}, ${colorPalette[4]}`);
             toast.success("Palette copied to clipboard");
         }
     }
